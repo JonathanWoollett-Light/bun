@@ -122,6 +122,8 @@ After cloning the repository, run the following command to run the first build. 
 $ bun setup
 ```
 
+If you encounter an error like `fatal: Unable to find current revision in submodule path 'src/bun.js/WebKit'` make sure to clone submodules, this can be done by running `git pull --recurse-submodules`.
+
 The binary will be located at `./build/bun-debug`. It is recommended to add this to your `$PATH`. To verify the build worked, let's print the version number on the development build of Bun.
 
 ```bash
